@@ -1,31 +1,19 @@
-# Insurance Analytics
+# Scripts
 
-## Project Overview
-This project focuses on analyzing historical insurance claim data for AlphaCare Insurance Solutions (ACIS) to optimize marketing strategies and identify low-risk targets for premium reduction.
+This directory contains scripts for data processing and analysis.
 
-## Objectives
-- Perform Exploratory Data Analysis (EDA) on the insurance data.
-- Utilize statistical methods to derive actionable insights.
-- Develop models to predict insurance claims and premiums.
+# Task 2: Data Version Control (DVC)
 
-## Repository Structure
-- `data/`: Contains the insurance data files.
-- `notebooks/`: Jupyter notebooks for analysis.
-- `src/`: Source code for data processing and modeling.
+## Overview
+This task involves setting up Data Version Control (DVC) for managing datasets in our project. DVC allows for versioning of data files, making it easier to track changes and collaborate on data science projects.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/NAV-369/Insurance-Analytics.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Insurance-Analytics
-   ```
-3. Install required packages (if any).
+## Tasks Completed
+1. **Installed DVC**: DVC has been installed in the project environment.
+2. **Initialized DVC**: DVC has been initialized in the project directory.
+3. **Set Up Local Remote Storage**: A local storage directory has been created and configured as a DVC remote.
+4. **Added Data**: The dataset `MachineLearningRating_v3.txt` has been added to DVC tracking.
+5. **Committed Changes**: The changes related to DVC have been committed to the Git repository.
+6. **Pushed Data**: The data has been pushed to the local DVC remote storage.
 
-## Usage
-- Run the Jupyter notebooks in the `notebooks/` directory for analysis.
-
-## License
-This project is licensed under the MIT License.
+## Next Steps
+- Continue with further tasks as outlined in the project plan.
