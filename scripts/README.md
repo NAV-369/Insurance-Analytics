@@ -1,19 +1,23 @@
-# Scripts
-
-This directory contains scripts for data processing and analysis.
-
-# Task 2: Data Version Control (DVC)
+# Task 3: A/B Hypothesis Testing
 
 ## Overview
-This task involves setting up Data Version Control (DVC) for managing datasets in our project. DVC allows for versioning of data files, making it easier to track changes and collaborate on data science projects.
+This project conducts A/B hypothesis testing to evaluate the impact of specific features on key performance indicators (KPIs).
 
-## Tasks Completed
-1. **Installed DVC**: DVC has been installed in the project environment.
-2. **Initialized DVC**: DVC has been initialized in the project directory.
-3. **Set Up Local Remote Storage**: A local storage directory has been created and configured as a DVC remote.
-4. **Added Data**: The dataset `MachineLearningRating_v3.txt` has been added to DVC tracking.
-5. **Committed Changes**: The changes related to DVC have been committed to the Git repository.
-6. **Pushed Data**: The data has been pushed to the local DVC remote storage.
+## Key Performance Indicators
+- Conversion Rate
+- Average Profit Margin
 
-## Next Steps
-- Continue with further tasks as outlined in the project plan.
+## Data Segmentation
+- **Group A (Control Group)**: Plans without the feature.
+- **Group B (Test Group)**: Plans with the feature.
+
+## Statistical Testing
+- Conducted t-tests for numerical KPIs.
+- Conducted chi-squared tests for categorical data.
+
+## Results
+- T-test results indicated insufficient data for analysis.
+- Chi-squared test showed a significant difference in gender distribution between groups.
+
+## Conclusion
+The findings suggest that the feature being tested may have different effects based on gender distribution. Further analysis may be needed to explore alternative KPIs or additional features.
