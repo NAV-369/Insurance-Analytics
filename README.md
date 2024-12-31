@@ -75,5 +75,6 @@ dvc repro
 This command will execute all stages in order, ensuring that the data is processed, the model is trained, and the evaluation is performed.
 
 Dependencies
-Make sure to install the necessary dependencies listed in requirements.txt before running the project.
+Make sure to install the necessary dependencies listed in requirements.txt before running
+the project.
 
