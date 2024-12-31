@@ -69,7 +69,7 @@ pip install -r requirements.txt
 ### initalize dvc
 ```bash
 dvc init
-### run dvc command
+ run dvc command
 ```bash 
 dvc repro
 This command will execute all stages in order, ensuring that the data is processed, the model is trained, and the evaluation is performed.
