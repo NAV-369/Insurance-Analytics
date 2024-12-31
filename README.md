@@ -1,41 +1,60 @@
-# Project Title
 
-## Project Aim
-This project aims to demonstrate a comprehensive data processing pipeline using Data Version Control (DVC) and statistical modeling techniques. The pipeline includes various stages such as data loading, preprocessing, feature engineering, model training, and evaluation to ensure a robust analysis of the dataset.
+## Business Objective
+AlphaCare Insurance Solutions (ACIS) is dedicated to developing cutting-edge risk and predictive analytics in the area of car insurance planning and marketing in South Africa. As a member of the data analytics team, your first project involves analyzing historical insurance claim data. The primary objective of this analysis is to optimize the marketing strategy and identify “low-risk” targets for potential premium reductions, thereby creating opportunities to attract new clients.
 
-## Tasks Overview
-The following tasks have been completed in this project:
-1. **Data Loading**: Raw data is loaded from CSV files using the `load_data.py` script.
-2. **Data Preprocessing**: The data is cleaned and preprocessed to handle missing values using the `preprocess.py` script.
-3. **Feature Engineering**: New features are created from the processed data using the `feature_engineering.py` script.
-4. **Model Training**: A machine learning model is trained using the features with the `train_model.py` script.
-5. **Model Evaluation**: The trained model is evaluated, and the results are saved using the `evaluate_model.py` script.
-6. **Data Version Control**: DVC is utilized to manage data and model versions throughout the project.
-7. **A/B Hypothesis Testing**: A/B hypothesis testing is conducted to evaluate the impact of specific features on key performance indicators (KPIs).
+### Key Areas of Focus
+To achieve these business objectives, you will need to enhance your knowledge and perform analyses in the following areas:
 
-## Task 3: A/B Hypothesis Testing
+### Insurance Terminologies:
+Familiarize yourself with how insurance works by reviewing key insurance terms. A recommended resource is the article "50 Common Insurance Terms and What They Mean" by Cornerstone Insurance Brokers.
+### A/B Hypothesis Testing:
+Understand the benefits of A/B hypothesis testing. You will be tasked with accepting or rejecting the following null hypotheses:
+There are no risk differences across provinces.
+There are no risk differences between zip codes.
+There are no significant margin (profit) differences between zip codes.
+There are no significant risk differences between women and men.
+### Machine Learning & Statistical Modeling:
+For each zip code, fit a linear regression model to predict total claims.
+Develop a machine learning model to predict optimal premium values based on:
+Features of the car to be insured.
+Features of the owner.
+Features related to the owner's location.
+Any other relevant features you identify.
+### Reporting and Recommendations
+Your final report should detail the methodologies used, present findings from your analyses, and make recommendations on plan features that could be modified or enhanced based on the test results. This will assist AlphaCare Insurance Solutions in tailoring their insurance products more effectively to meet consumer needs and preferences.
 
-### Overview
-This project conducts A/B hypothesis testing to evaluate the impact of specific features on key performance indicators (KPIs).
+## Task Overview
+### Task 1: Git and GitHub
+- **Tasks**: 
+  - Create a git repository for the week with a good README.
+  - Implement Git version control.
+  - Set up CI/CD with GitHub Actions.
+- **Key Performance Indicators (KPIs)**:
+  - Dev Environment Setup.
+  - Relevant skills in the area demonstrated.
+  - Project Planning - EDA & Stats.
 
-### Key Performance Indicators
-- Conversion Rate
-- Average Profit Margin
-
-### Data Segmentation
-- **Group A (Control Group)**: Plans without the feature.
-- **Group B (Test Group)**: Plans with the feature.
-
-### Statistical Testing
-- Conducted t-tests for numerical KPIs.
-- Conducted chi-squared tests for categorical data.
-
-### Results
-- T-test results indicated insufficient data for analysis.
-- Chi-squared test showed a significant difference in gender distribution between groups.
-
-### Conclusion
-The findings suggest that the feature being tested may have different effects based on gender distribution. Further analysis may be needed to explore alternative KPIs or additional features.
+### Task 2: Data Version Control (DVC)
+- **Tasks**:
+  - Install DVC: `pip install dvc`.
+  - Initialize DVC: `dvc init`.
+  - Set up local remote storage.
+  - Add your data: `dvc add <data.csv>`.
+  - Commit changes to version control.
+  - Push data to local remote: `dvc push`.
+  
+### Task 3: A/B Hypothesis Testing
+- **Tasks**:
+  - Select Metrics and Data Segmentation.
+  - Conduct statistical testing.
+  - Analyze and report findings.
+  
+### Task 4: Statistical Modeling
+- **Tasks**:
+  - Data preparation: Handle missing data, feature engineering, and encoding categorical data.
+  - Model building: Implement various modeling techniques.
+  - Model evaluation: Evaluate each model using appropriate metrics.
+  - Feature importance analysis: Use SHAP or LIME for interpretability.
 
 ## Usage Instructions
 To run the project and execute the DVC pipeline, follow these steps:
@@ -43,20 +62,18 @@ To run the project and execute the DVC pipeline, follow these steps:
    ```bash
    git clone <repository-url>
    cd week-3
-   ```
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Initialize DVC (if not already done):
-   ```bash
-   dvc init
-   ```
-4. Run the DVC pipeline:
-   ```bash
-   dvc repro
-   ```
+### Install the required dependencies:  
+```bash
+pip install -r requirements.txt
+```
+### initalize dvc
+```bash
+dvc init
+### run dvc command
+```bash 
+dvc repro
 This command will execute all stages in order, ensuring that the data is processed, the model is trained, and the evaluation is performed.
 
-## Dependencies
-Make sure to install the necessary dependencies listed in `requirements.txt` before running the project.
+Dependencies
+Make sure to install the necessary dependencies listed in requirements.txt before running the project.
+
